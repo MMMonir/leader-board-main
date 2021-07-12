@@ -15,12 +15,16 @@ body{
     background-color: #ffffff;
     width: 870px;
     padding: 30px;
+    margin-top: 15px;
+    border-radius: 10px;
 }
 
 /* Top Playes Styles */
 main{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
 }
 
 .players {
@@ -34,7 +38,8 @@ main{
     font-weight: 500;
     font-size: 24px;
     line-height: 36px;
-    margin-top: 3px;
+    /* margin-top: 0px; */
+    margin-bottom: 25px;
 }
 
 .player img {
@@ -56,6 +61,7 @@ main{
 
 hr{
     border: 1px solid #D1D1D1;
+    margin-bottom: 30px;
 }
 
 .top-players {
