@@ -69,7 +69,6 @@ hr{
 .top-players {
     margin-bottom: 21px;
 }
-
 /*Top Blog Styles*/
 .blogs{
     display: grid;
@@ -182,14 +181,42 @@ hr{
     .container{
         width: 100%;
     }
-    .players{
+    .top-players, .top-blogs, .new-courses{
+        padding: 2% 10%;
+    }
+    .players, .blogs, .courses{
         grid-template-columns: repeat(1, 1fr);
     }
-    .player{
+    .player, .blog,{
         display: flex;
         flex-direction: column;
     }
-    .blogs, .courses{
-        display: none;
+    .course{
+        margin-bottom: 20px;
     }
+    
+}
+
+/* Tablet Screen */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    .container{
+        width: 100%;
+    }
+    .top-players, .top-blogs, .new-courses{
+        padding:1% 10%;
+    }
+    .players, .courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .blog,{
+        display: flex;
+        flex-direction: column;
+    }
+    .course{
+        margin-bottom: 20px;
+    }
+    
 }
